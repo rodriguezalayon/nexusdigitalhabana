@@ -67,6 +67,7 @@ nav li:hover, nav li.active {
   width: 100%;
   height: 65%;
   object-fit: cover;
+  padding: 15px;
 }
 
 .product-content {
