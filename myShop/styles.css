@@ -1,3 +1,57 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  background-color: #1e1e2f;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+nav li {
+  cursor: pointer;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav li:hover,
+nav li.active {
+  color: #00c37d;
+}
+
+/* Main Layout */
+main {
+  flex: 1;
+}
+
 /* Product Grid */
 .product-grid {
   display: flex;
@@ -10,10 +64,10 @@
 /* Product Card */
 .product {
   flex: 0 0 300px; /* fixed card width */
-  height: 440px; /* fixed card height */
+  height: 440px;   /* fixed card height */
   background: #fff;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -24,16 +78,16 @@
   transform: translateY(-5px);
 }
 
-/* Image section */
+/* Product Image */
 .product img {
   width: 100%;
   height: 200px;
-  object-fit: contain; /* image scales but stays contained */
-  background: #f4f4f4; /* gives neutral background if image smaller */
+  object-fit: contain;
+  background: #f4f4f4;
   padding: 10px;
 }
 
-/* Content section */
+/* Product Content */
 .product-content {
   flex: 1;
   display: flex;
@@ -52,7 +106,7 @@
   font-size: 0.9rem;
   color: #555;
   margin-bottom: 0.75rem;
-  flex-grow: 1; /* allows description to expand naturally */
+  flex-grow: 1;
 }
 
 .product .price {
@@ -77,7 +131,25 @@
   background: #00a86b;
 }
 
-/* Responsive Adjustments */
+/* Footer */
+footer {
+  text-align: center;
+  background: #1e1e2f;
+  color: #fff;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+footer a {
+  color: #00c37d;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
   .product {
     flex: 0 0 260px;
@@ -88,8 +160,9 @@
 @media (max-width: 480px) {
   .product {
     flex: 0 0 90%;
-    height: auto; /* allow natural height for smaller screens */
+    height: auto;
   }
+
   .product img {
     height: 180px;
   }
