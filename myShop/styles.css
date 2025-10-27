@@ -15,15 +15,29 @@ body {
   min-height: 100vh;
 }
 
-/* Header */
+/* Fixed Header */
 header {
+  position: fixed;   /* makes the header fixed */
+  top: 0;            /* sticks to the top */
+  left: 0;
+  width: 100%;       /* spans full width */
   background-color: #1e1e2f;
   color: #fff;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  z-index: 1000;     /* ensures header stays above content */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* subtle shadow for depth */
 }
+
+/* Adjust main content to avoid being hidden under fixed header */
+main {
+  padding-top: 80px; /* same height as header + some spacing */
+}
+
 
 header h1 {
   font-size: 1.5rem;
@@ -45,11 +59,6 @@ nav li {
 nav li:hover,
 nav li.active {
   color: #00c37d;
-}
-
-/* Main Layout */
-main {
-  flex: 1;
 }
 
 /* Product Grid */
