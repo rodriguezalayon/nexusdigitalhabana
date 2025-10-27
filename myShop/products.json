@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Handmade Necklace",
+    "price": "$25",
+    "image": "images/necklace.jpg",
+    "description": "Elegant handmade necklace with natural stones.",
+    "category": "Jewelry",
+    "whatsapp": "1234567890"
+  },
+  {
+    "name": "Vintage Lamp",
+    "price": "$40",
+    "image": "images/lamp.jpg",
+    "description": "Rustic lamp perfect for home decor.",
+    "category": "Home Decor",
+    "whatsapp": "1234567890"
+  },
+  {
+    "name": "Leather Wallet",
+    "price": "$30",
+    "image": "images/wallet.jpg",
+    "description": "Genuine leather wallet with multiple compartments.",
+    "category": "Accessories",
+    "whatsapp": "1234567890"
+  },
+  {
+    "name": "Gold Earrings",
+    "price": "$35",
+    "image": "images/earrings.jpg",
+    "description": "Stylish gold-plated earrings for every occasion.",
+    "category": "Jewelry",
+    "whatsapp": "1234567890"
+  }
+]
